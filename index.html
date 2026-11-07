@@ -5,43 +5,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Hamza Builds | Web Developer</title>
 <meta name="description" content="Hamza builds websites and booking systems for clinics and local businesses in Nigeria. Hosting and domain included.">
-<meta name="theme-color" content="#0C0C0C">
+<meta name="theme-color" content="#eef4ff">
 <meta property="og:title" content="Hamza Builds | Web Developer">
 <meta property="og:description" content="Websites, online booking and staff dashboards for clinics and local businesses.">
 <link rel="icon" href="img/mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("hb-theme")||"light")}catch(e){document.documentElement.setAttribute("data-theme","light")}</script>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <main id="top" class="page">
 
 <!-- 1. HERO -->
-<section class="hero" id="hero">
-  <nav class="nav" data-fade data-y="-20" data-delay="0">
-    <a href="about.html">About</a>
-    <a href="services.html">Price</a>
-    <a href="projects.html">Projects</a>
-    <a href="blog.html">Blog</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-  <div class="hero-head" data-fade data-y="40" data-delay=".15">
-    <h1 class="hero-heading" id="hero-h1">Hi, i&apos;m hamza</h1>
+<header class="bar" id="bar">
+  <a class="brand" href="index.html" aria-label="Hamza Builds home"><img src="img/mark.png" alt="" width="40" height="40"><span><b>HAMZA<br>BUILDS</b><small>Web developer</small></span></a>
+  <nav class="links" id="links" aria-label="Main"><a href="index.html" class="on" aria-current="page">Home</a><a href="about.html">About</a><a href="services.html">Price</a><a href="projects.html">Projects</a><a href="blog.html">Blog</a><a href="reviews.html">Reviews</a><a href="contact.html">Contact</a></nav>
+  <div class="bar-r">
+    <button class="tbtn" id="theme" type="button" aria-label="Switch between light and dark">
+      <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+      <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    </button>
+    <a class="btn-talk" href="contact.html">Let&apos;s Talk</a>
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="links"><span></span><span></span><span></span></button>
   </div>
+</header>
+<a class="wa-float" data-wa href="#" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.95L2 22l5.2-1.5A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 1 1-4.3 15l-.3-.2-3 .9.9-2.9-.2-.3A8.1 8.1 0 0 1 12.04 3.8Zm-3 3.6c-.2 0-.5.1-.7.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2 3.2 5 4.4 2.4.9 2.9.7 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4l-.5-.3-1.8-.9c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.9-.4-2-1-2.8-2.4-.1-.2 0-.4.1-.5l.4-.5.3-.4c.1-.2 0-.3 0-.5l-.8-2c-.2-.5-.4-.4-.6-.4Z"/></svg></a>
 
-  <div class="hero-bottom">
-    <p class="hero-sub" data-fade data-y="20" data-delay=".35">a web developer building websites and booking systems for clinics and local businesses</p>
-    <div data-fade data-y="20" data-delay=".5"><a class="btn-contact" href="contact.html">Contact Me</a></div>
+<section class="hero2" id="hero">
+  <div class="hero2-copy">
+    <span class="badge" data-fade data-y="14"><i></i><b>Hamza Builds</b><em>Available for new projects</em></span>
+    <h1 data-fade data-y="24" data-delay=".08">Building Digital Experiences That Help <span class="grad">Businesses Grow.</span></h1>
+    <p class="eyebrow" data-fade data-y="16" data-delay=".16">&lt;/&gt; Web developer &amp; digital solutions developer</p>
+    <p class="lede" data-fade data-y="16" data-delay=".22">I&apos;m Hamza, a web developer in Ilorin. I build modern websites, online booking and staff systems for clinics and local businesses across Nigeria, and I handle the design, the hosting and your domain.</p>
+    <div class="btn-row hero-btns" data-fade data-y="16" data-delay=".3"><a class="btn-contact" href="projects.html">Explore My Work</a><a class="btn-ghost" href="contact.html">Let&apos;s Talk</a></div>
   </div>
-
-  <div class="portrait-wrap" data-fade data-y="30" data-delay=".6">
-    <div class="magnet" data-magnet>
-      <img id="portrait" class="portrait" src="img/portrait.png" alt="Hamza" width="520" height="520">
+  <aside class="hero2-card" data-fade data-y="30" data-delay=".2" aria-label="What you get">
+    <div class="hc-head"><span class="hc-ico"><img src="img/mark.png" alt="" width="28" height="28"></span><b>What you get</b><span class="hc-live"><i></i>Live</span></div>
+    <div class="hc-main"><small>Phone-first websites</small><p>Clean layouts that fit every screen, with a WhatsApp button on every page.</p></div>
+    <div class="hc-tiles">
+      <div><b>Hosting</b><span>Included</span></div>
+      <div><b>Domain</b><span>Included</span></div>
+      <div><b>Booking</b><span>WhatsApp or online</span></div>
     </div>
-  </div>
+    <div class="hc-foot"><span>Designed with care</span><a href="services.html">Explore Services &#8599;</a></div>
+  </aside>
 </section>
 
 <!-- 2. MARQUEE -->
@@ -161,12 +170,11 @@
     <div class="card-wrap"><article class="pcard" data-card>
       <div class="pc-top">
         <div class="num">01</div>
-        <div class="pc-meta"><span class="cat">Client</span><h3>Na&apos;ibi Dental Clinic</h3><p>Website, online booking and staff system</p></div>
-        <a class="btn-ghost" href="https://na-ibi-dental.vercel.app" target="_blank" rel="noopener">Live Project</a>
+        <div class="pc-meta"><span class="cat">Client</span><h3>Lascot Studio</h3><p>Photography studio website with online booking and private client galleries</p></div>
+        <a class="btn-ghost" href="https://www.lascotstudios.com" target="_blank" rel="noopener">Live Project</a>
       </div>
-      <div class="pc-imgs">
-        <div class="col1"><div class="im i1"><img src="img/naibi-scan.webp" alt="Na'ibi staff check-in screen" loading="lazy"></div><div class="im i2"><img src="img/naibi-staff.webp" alt="Na'ibi staff schedule" loading="lazy"></div></div>
-        <div class="col2"><div class="im"><img src="img/naibi-hero.webp" alt="Na'ibi Dental Clinic home page" loading="lazy"></div></div>
+      <div class="pc-imgs single">
+        <div class="im wide"><img src="img/lascot-laptop.webp" alt="Lascot Studio website on a laptop, light and blue versions" loading="lazy"></div>
       </div>
     </article></div>
 

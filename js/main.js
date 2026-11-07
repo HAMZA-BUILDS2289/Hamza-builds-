@@ -235,3 +235,16 @@ var CONFIG = {
       try{window.open(u,"_blank")}catch(x){}
     });
   })();
+
+/* theme switch + mobile menu */
+(function(){
+  var root=document.documentElement, t=document.getElementById("theme"), b=document.getElementById("burger"), bar=document.getElementById("bar");
+  if(t) t.addEventListener("click",function(){
+    var n=root.getAttribute("data-theme")==="dark"?"light":"dark";
+    root.setAttribute("data-theme",n); try{localStorage.setItem("hb-theme",n)}catch(e){}
+  });
+  if(b&&bar){
+    b.addEventListener("click",function(){var o=bar.classList.toggle("open");b.setAttribute("aria-expanded",o?"true":"false");b.setAttribute("aria-label",o?"Close menu":"Open menu")});
+    var ls=document.getElementById("links"); if(ls) ls.addEventListener("click",function(e){if(e.target.closest("a")){bar.classList.remove("open");b.setAttribute("aria-expanded","false")}});
+  }
+})();
